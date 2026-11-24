@@ -57,5 +57,7 @@ public class LabGradeRecord {
             System.out.println("Still " + ben.getFinalGrade() + "; not passing");
         }
     }
-}
-       
+}         // Question 1:
+         // Validating both new scores before assigning either one prevents the object from ending up in a partially updated, 
+        //corrupted state if the first score is valid (such as 95) but the second score is invalid (such as 101). 
+        //Checking both inputs upfront guarantees an all-or-nothing update so that both original scores remain unchanged whenever an update fails.
